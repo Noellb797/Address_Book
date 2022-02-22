@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Address Book Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/AddressBookApp.js}"></script>
+</head>
+<body>
+<h1>Add New AddressBook</h1>
+<form>
+    <p>Name: <input type="text" id="addressBookName"/></p>
+    <p><button type = "button" onclick="newAddressBook(document.getElementById('addressBookName').value)">Add New Address Book </button></p>
+</form>
+<h1>Add New Buddy</h1>
+<form>
+    <p>Name: <input type="text" id="buddyName"/></p>
+    <p>Address: <input type="text" id="buddyAddress" /></p>
+    <p>Phone: <input type="text" id="buddyPhone" /></p>
+    <p>AddressBook ID: <input type="text" id="aBID"/></p>
+    <p><button type = "button" onclick="newBuddy(document.getElementById('aBID').value, document.getElementById('buddyName').value, document.getElementById('buddyAddress').value,document.getElementById('buddyPhone').value)">Add New Buddy</button></p>
+</form>
+
+<h1>Address Books</h1>
+<section id="books">
+
+</section>
+<h1> Buddies </h1>
+<section id="buddies">
+
+</section>
+<h2>Please test this SPA before testing static pages</h2>
+<h3>Address Books can also be viewed at static page /viewAddressBooks</h3>
+<h3>New Address Books can also be made at static page /newAddressBook</h3>
+<h3>Buddies can also be added at static page /addBuddy</h3>
+</body>
+
+</html>

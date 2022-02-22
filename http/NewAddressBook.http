@@ -1,0 +1,6 @@
+# curl -i -H "Content-Type:application/json" -d '{"name": "PostBook"}' http://localhost:8080/AddressBook/new
+POST http://localhost:8080/AddressBook/new
+Content-Type: application/json
+
+{"name": "PostBook"}
+
