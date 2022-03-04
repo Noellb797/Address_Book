@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Address Book" />
+        <module name="AddressBook" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="15" />
@@ -14,6 +15,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Address Book" options="-parameters" />
+      <module name="AddressBook" options="-parameters" />
     </option>
   </component>
 </project>
