@@ -23,7 +23,7 @@ public class AddressBookTest {
 
     @Test
     public void getNumBuddies() {
-        assertEquals(2, ab.getNumBuddies());
+        assertEquals(3, ab.getNumBuddies());
     }
 
     @Test
@@ -37,7 +37,7 @@ public class AddressBookTest {
 
     @Test
     public void addBuddy() {
-        ab.addNewBuddy("Peter Rogers", "000 North Pole", "(000) 000 0000", 0l);
+        ab.addNewBuddy("Peter Rogers", "000 North Pole", "(000) 000 0000", 0L);
         BuddyInfo b = ab.getBuddyAt(2);
 
         assertEquals(3, ab.getNumBuddies());
@@ -57,8 +57,8 @@ public class AddressBookTest {
     public void persistenceTest() {
         ab = new AddressBook();
         ab.setName("Book 1");
-        b1 = new BuddyInfo("John Smith", "123 Fourth St", "1234567890", 0l);
-        b2 = new BuddyInfo("Ryan Jones", "321 Main St", "1111111111", 0l);
+        b1 = new BuddyInfo("John Smith", "123 Fourth St", "1234567890", 0L);
+        b2 = new BuddyInfo("Ryan Jones", "321 Main St", "1111111111", 0L);
 
         // Connecting to the database through EntityManagerFactory
         // connection details loaded from persistence.xml
@@ -124,8 +124,8 @@ public class AddressBookTest {
     public void cascadeTest() {
         ab = new AddressBook();
         ab.setName("Book 2");
-        b1 = new BuddyInfo("Jane Doe", "000 North Pole", "0000000000", 0l);
-        b2 = new BuddyInfo("Sally Ride", "Outer Space", "**********", 0l);
+        b1 = new BuddyInfo("Jane Doe", "000 North Pole", "0000000000", 0L);
+        b2 = new BuddyInfo("Sally Ride", "Outer Space", "**********", 0L);
 
         ab.addBuddy(b1);
         ab.addBuddy(b2);
