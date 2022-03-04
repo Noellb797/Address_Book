@@ -6,9 +6,11 @@ name: Java CI with Maven
 on:
   pull_request:
     branches: [ main ]
+  push:
+    branches: [ main ]
 
 jobs:
-  build:
+  build_and_test:
 
     runs-on: ubuntu-latest
 
