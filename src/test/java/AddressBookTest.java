@@ -23,7 +23,7 @@ public class AddressBookTest {
 
     @Test
     public void getNumBuddies() {
-        assertEquals(3, ab.getNumBuddies());
+        assertEquals(2, ab.getNumBuddies());
     }
 
     @Test
