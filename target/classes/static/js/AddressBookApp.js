@@ -22,7 +22,7 @@ function newAddressBook(name) {
             'Content-Type': 'application/json'
         },
         type: "POST",
-        url: 'http://localhost:8080/AddressBook/new',
+        url: '/AddressBook/new',
         dataType: "json",
         data: JSON.stringify({
             name: name
@@ -47,7 +47,7 @@ function newBuddy(aBID, name, address, phone) {
             'Content-Type': 'application/json'
         },
         type: "POST",
-        url: 'http://localhost:8080/AddressBook/addBuddy',
+        url: '/AddressBook/addBuddy',
         dataType: "json",
         data: JSON.stringify({
             addressBookId: aBID,
@@ -79,7 +79,7 @@ function updateData(){
 function getAddressBook(value) {
     $.ajax({
         type: "GET",
-        url: 'http://localhost:8080/AddressBook/' + value,
+        url: '/AddressBook/' + value,
         dataType: "json",
         success: function(data) {
             updateBook(data, value, data.numBuddies);
@@ -103,7 +103,7 @@ function updateBook(data, value, numBuddies) {
 function getBuddies(value, numBuddies) {
     $.ajax({
         type: "GET",
-        url: 'http://localhost:8080/AddressBook/' + value + '/buddies',
+        url: '/AddressBook/' + value + '/buddies',
         dataType: "json",
         success: function(data) {
             updateBuddies(data, numBuddies);
