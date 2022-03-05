@@ -1,3 +1,5 @@
+package lab;
+
 import lab.AddressBook;
 import lab.BuddyInfo;
 import org.junit.Before;

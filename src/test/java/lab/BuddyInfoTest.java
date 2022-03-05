@@ -1,3 +1,5 @@
+package lab;
+
 import lab.BuddyInfo;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,8 +17,8 @@ public class BuddyInfoTest {
 
     @Before
     public void setUp() throws Exception {
-        b1 = new BuddyInfo("John Smith", "123 Fourth St", "1234567890", 0l);
-        b2 = new BuddyInfo("Ryan Jones", "321 Main St", "1111111111", 0l);
+        b1 = new BuddyInfo("John Smith", "123 Fourth St", "1234567890", 0L);
+        b2 = new BuddyInfo("Ryan Jones", "321 Main St", "1111111111", 0L);
     }
 
     @Test
