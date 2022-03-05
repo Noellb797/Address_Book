@@ -11,7 +11,7 @@
     </parent>
     <groupId>noellsoft</groupId>
     <artifactId>AddressBook</artifactId>
-    <version>Lab5</version>
+    <version>Lab6</version>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
